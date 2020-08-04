@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: apicontagemaula
-          image: groffeazuredevops.azurecr.io/apicontagem
+          image: groffeazuredevops.azurecr.io/apicontagemaula
           env:
             - name: MensagemVariavel
               value: Utilizando o Azure Kubernetes Service (AKS) - Escalado para 5 Pods
