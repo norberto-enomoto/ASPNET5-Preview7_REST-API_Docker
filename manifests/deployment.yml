@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: apicontagemaula 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: apicontagemaula 
+    spec:
+      containers:
+        - name: apicontagemaula 
+          image: groffeazuredevops.azurecr.io/apicontagemaula
+          ports:
+          - containerPort: 80
