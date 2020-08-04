@@ -33,7 +33,7 @@ namespace APIContagem.Controllers
                     _CONTADOR.Local,
                     _CONTADOR.Kernel,
                     _CONTADOR.TargetFramework,
-                    MensagemFixa = "Alteração de código",
+                    MensagemFixa = "Alteração de código 2",
                     MensagemVariavel = _configuration["MensagemVariavel"]
                 };
             }
