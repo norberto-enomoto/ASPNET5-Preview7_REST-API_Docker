@@ -5,7 +5,8 @@ using Microsoft.Extensions.Logging;
 namespace APIContagem.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    // [Route("[controller]")]
+    [Route("api/counter")]
     public class ContadorController : ControllerBase
     {
         private static readonly Contador _CONTADOR = new Contador();
@@ -33,7 +34,7 @@ namespace APIContagem.Controllers
                     _CONTADOR.Local,
                     _CONTADOR.Kernel,
                     _CONTADOR.TargetFramework,
-                    MensagemFixa = "Alteração de código 3",
+                    MensagemFixa = "DXC Technology",
                     MensagemVariavel = _configuration["MensagemVariavel"]
                 };
             }
