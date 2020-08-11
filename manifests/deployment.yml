@@ -1,20 +1,20 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: apicontagemaula
+  name: apicounter
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: apicontagemaula
+      app: apicounter
   template:
     metadata:
       labels:
-        app: apicontagemaula
+        app: apicounter
     spec:
       containers:
-        - name: apicontagemaula
-          image: groffeazuredevops.azurecr.io/apicontagemaula
+        - name: apicounter
+          image: trainingazuredevopsacr01.azurecr.io/apicounter:latest
           env:
             - name: MensagemVariavel
               value: Utilizando o Azure Kubernetes Service (AKS) - Escalado para 5 Pods
