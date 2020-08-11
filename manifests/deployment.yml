@@ -20,3 +20,11 @@ spec:
               value: Utilizando o Azure Kubernetes Service (AKS) - Escalado para 5 Pods
           ports:
           - containerPort: 80
+          resources:
+            requests:
+              cpu: 250m
+            limits:
+              cpu: 500m
+      imagePullSecrets:
+        - name: regcred
+
